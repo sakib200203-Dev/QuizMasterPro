@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizMaster Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Home Screen -->
+
+    <section id="home" class="active">
+
+        <h1>🎯 QuizMaster Pro</h1>
+
+        <p class="subtitle">
+            Test your HTML, CSS & JavaScript knowledge.
+        </p>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter your name"
+        >
+
+        <select id="category">
+
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+
+        </select>
+
+        <button id="startBtn">
+            Start Quiz
+        </button>
+
+    </section>
+
+    <!-- Quiz Screen -->
+
+    <section id="quiz">
+
+        <div class="top-bar">
+
+            <div id="progressText">
+                Question 1 / 15
+            </div>
+
+            <div id="timer">
+                30
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h2 id="question">
+            Question Here
+        </h2>
+
+        <div id="answers">
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="nextBtn">
+                Next
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Result Screen -->
+
+    <section id="result">
+
+        <h1>🎉 Quiz Completed</h1>
+
+        <h2 id="welcomeUser"></h2>
+
+        <h3 id="scoreText"></h3>
+
+        <h3 id="percentage"></h3>
+
+        <h3 id="bestScore"></h3>
+
+        <button id="restartBtn">
+            Restart Quiz
+        </button>
+
+    </section>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+```
